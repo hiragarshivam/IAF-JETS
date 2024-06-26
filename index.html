@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>I.A.F Jets</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    /* Custom styles for Neumorphism effect for navbar */
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: lightblue;
+    }
+
+    .fixed-top .container {
+      border-radius: 50px;
+      padding: 5px;
+      background: linear-gradient(225deg, #9cc2cf, #b9e7f6);
+      box-shadow: -8px 8px 16px #586e75,
+        8px -8px 16px #ffffff;
+    }
+
+
+    #INDIAN-AIRFORCE-BADGE{
+      padding-left:20px ;
+      
+    }
+
+    .nav-item .nav-link.dropdown-toggle {
+      margin-left: 10px;
+      margin-right: 10px;
+      color: white;
+      border-radius: 56px;
+      background: linear-gradient(225deg, #9cc2cf, #b9e7f6);
+      box-shadow: -8px 8px 10px #586e75,
+       8px -8px 10px #d8e8ec;
+      
+    }
+
+
+    .dropdown-menu {
+      border-radius: 10px;
+      background: linear-gradient(225deg, #9cc2cf, #b9e7f6);
+      box-shadow: -8px 8px 16px #586e75,
+       8px -8px 16px 1px #d8e8ec;
+    }
+
+    #carousal {
+      margin-top: 75px;
+
+    }
+
+    .carousel-item img {
+      border-radius: 40px;
+
+    }
+
+    .hero-pic{
+      padding: 10px;
+      border-radius: 50%;
+      background: linear-gradient(225deg, #9cc2cf, #b9e7f6);
+      box-shadow: -8px 8px 16px #586e75,
+       8px -8px 16px #d8e8ec;
+    }
+
+    .col .card {
+      border-radius: 30px;
+      background: linear-gradient(300deg, green, white, orange);
+      background-size: 180% 180%;
+      animation: gradient-animation 3s ease infinite;
+
+      border-radius: 2%;
+
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 50% 100%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .album {
+      background-color: teal;
+      border-radius: 50px;
+      background: linear-gradient(225deg, #9cc2cf, #b9e7f6);
+      box-shadow: -8px 8px 16px #586e75,
+       8px -8px 16px #d8e8ec;
+    }
+
+    .btn-group {
+      border: 2px solid grey;
+    }
+
+
+    .mahotsav {
+      margin-left: 70px;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <!--navbar-->
+  <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg " aria-label="Thirteenth navbar example">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-3 me-0 ms-0" href="#"><img src="./iaf badge.png " alt="INDIAN AIRFORCE BADGE"
+              height="40px" id="INDIAN-AIRFORCE-BADGE"></a>
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Indian
+                Airforce Official sites</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://indianairforce.nic.in/">IAF Official</a></li>
+                <li><a class="dropdown-item" href="https://x.com/iaf_mcc?lang=en">IAF X-Handle</a></li>
+                <li><a class="dropdown-item" href="https://www.bharat-rakshak.com/">Bharat-Rakshak</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/indianairforce/?hl=en" width="50px">IAF
+                    Instagram-Handle</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Defence
+                News</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.indiandefensenews.in/">IDN</a></li>
+                <li><a class="dropdown-item" href="https://idrw.org/">IDRW</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Tools
+                Used</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://getbootstrap.com/">Bootstrap</a></li>
+                <li><a class="dropdown-item" href="https://chatgpt.com/">Chatgpt</a></li>
+                <li><a class="dropdown-item" href="https://www.w3schools.com/w3css/defaulT.asp">W3schools</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--carousal-->
+  <div class="container-fluid" id="carousal">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="./c1.jpg" class="d-block w-100" height="650px" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./c2.jpg" class="d-block w-100" height="650px" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./c3.jpg" class="d-block w-100" height="650px" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div>
+
+
+
+
+
+
+
+
+
+      <!--hero-->
+      <div class="px-4 py-5  text-center">
+        <img class="hero-pic" class="d-block mx-auto mb-4" src="./iaf badge.png" alt="" height="100px">
+        <h1 class="display-5 fw-bold text-body-emphasis">MOTTO OF IAF <br>
+          Touch the sky with Glory</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead ">नभ:स्पृशं दीप्तमनेकवर्णं व्यात्ताननं दीप्तविशालनेत्रम् ।<br>
+            दृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा धृतिं न विन्दामि शमं च विष्णो ।।</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!--grid-->
+      <div class="album py-5 ">
+        <div class="container" class="background-of-grid">
+
+
+
+
+
+
+          <!--su30mki-->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./su30mki.png" alt="" height="245px" width="400px">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm ">Sukhoi su-30mki</button>
+                      <a class="btn " href="./su30mki.html" role="button">Click Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <!--tejas mk1-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./hal tejas.png" alt="" height="245px" width="421.33px ">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm ">HAL Tejas mk1</button>
+                      <a class="btn " href="./tejas.html" role="button">Click Details</a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <!--mig29-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./mig29.png" alt="" height="240px" width="421.33px ">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm ">Mikoyan MiG-29</button>
+                      <a class="btn " href="./mig29.html" role="button">Click Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <!--jaguar-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./jaguar.png" alt="" height="240px" width="421.33px ">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm ">SEPECAT Jaguar</button>
+                      <a class="btn " href="./jaguar.html" role="button">Click Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <!--rafale-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./rafale.png" alt="" height="240px" width="421.33px ">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm ">Dassault Rafale</button>
+                      <a class="btn " href="./rafale.html" role="button">Click Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!--mirage-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./mirage-2000.png" alt="" height="240px" width="421.33px ">
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm ">Dassault Mirage-2000</button>
+                      <a class="btn " href="./mirage.html" role="button">Click Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <!--mig21-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href=""><img src="./mig21.png" alt="" height="240px" width="421.33px "></a>
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm ">Mikoyan MiG-21</button>
+                      <a class="btn " href="./mig21.html" role="button">Click Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <!--tejas mk2-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href=""><img src="./tejasmk2.png" alt="" height="235" width="420px"></a>
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm ">HAL Tejas mk2</button>
+                      <a class="btn " href="./tejasmk2.html" role="button">Click Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!--amca-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href=""><img src="./amca.png" alt="" height="235px"></a>
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm ">AMCA</button>
+                      <a class="btn " href="./amca.html" role="button">Click Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <!--footer-->
+      <div class="container-fluid">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  border-top">
+          <div class="col mb-3">
+
+
+            <img src="./logo_edited.png" alt="" height="200px" class="mahotsav">
+          </div>
+
+          <div class="col ">
+
+          </div>
+
+          <div class="col ">
+
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fleet Overview</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gallery</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">IAF History</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col ">
+
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">News</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Events</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Media</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+
+            <ul class="nav flex-column">
+
+              <p>&copy; 2024 Indian Air Force. All rights reserved.</p>
+
+            </ul>
+          </div>
+        </footer>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
